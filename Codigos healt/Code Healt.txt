@@ -1,0 +1,108 @@
+
+package Healthsystem;
+
+
+public class Jugador {
+    String vida;
+    String nombre;
+    String dañogolpe;
+    String ataque;
+    String recibirDaño;
+    String recibirVida; 
+    
+    public static void main(String [] args){
+        //jugador
+        Jugador Jugador1 = new Jugador();
+        
+        Jugador1.nombre = "Junior Bicicleta Fernandez";
+        Jugador1.vida = "100";
+        Jugador1.dañogolpe = "12";
+        Jugador1.ataque = "12";
+        Jugador1.recibirDaño = "13";
+        Jugador1.recibirVida = "100";
+       
+        
+        System.out.println("El nombre del Jugador es: "+Jugador1.nombre);
+        System.out.println("La vida del Jugador es: "+Jugador1.vida);
+        System.out.println("El daño del Jugador es: "+Jugador1.dañogolpe);
+        System.out.println("El jugador Ataca: "+Jugador1.ataque);
+        System.out.println("El jugador es Atacado: "+Jugador1.recibirDaño);
+        System.out.println("El jugador recibe Vida: "+Jugador1.recibirVida);
+        
+      
+    }
+}
+
+
+
+
+
+
+package Healthsystem;
+
+public class Zombie {
+    
+  String vida = "50";
+  String dañoRasguño = "13";
+  String ataque;
+  String recibirDaño;
+ 
+    public static void main (String [] args){
+      Zombie Zombie1 = new Zombie();
+      
+      Zombie1.vida = "50";
+      Zombie1.dañoRasguño = "13";
+      
+      System.out.println("La vida del Zombie es: "+Zombie1.vida);
+      System.out.println("El daño que hace el Zombie es: "+Zombie1.dañoRasguño);
+      System.out.println("El Zombie es Atacado: "+Zombie1.recibirDaño);
+      
+  }
+}
+
+
+
+
+
+
+
+package Healthsystem;
+
+
+public class Botiquin {
+    String montoPuntosDeVida;
+    String estaUsado;
+    String curarVida;
+    
+    public static void main(String [] args){
+        Botiquin Boti = new Botiquin ();
+        Boti.estaUsado = "0";
+        Boti.montoPuntosDeVida = "100";
+           
+        System.out.println("El Botiquin esta usado:  "+Boti.estaUsado);
+        System.out.println("El monto de curacion es: "+Boti.montoPuntosDeVida);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
